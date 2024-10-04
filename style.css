@@ -1,0 +1,1255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Gabarito", sans-serif;
+}
+.Header{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+.Header__S0{
+    cursor: pointer;
+    display: none;
+}
+.Header__S1{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.Header__S1 h1{
+    font-size: 30px;
+    cursor: pointer;
+}
+.Header__S1 img{
+    width: 6%;
+    height: 6%;
+    cursor: pointer;
+}
+.Header__S2{
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 40%;
+}
+.Header__S2 p{
+    cursor: pointer;
+}
+.Header__S3{
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 9px;
+}
+.Header__S3__button1{
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+    border: solid wheat 1px;
+    cursor: pointer;
+}
+.Header__S3__button2{
+    padding: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: solid black 1px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.Header__S3__button3{
+    padding: 10px;
+    background-color: white;
+    color: rgb(6, 150, 6);
+    border: solid rgb(6, 150, 6) 1px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: none;
+}
+.Header__S3__button1:hover{
+    transition: 0.5s;
+    background-color: #F2F2F2;
+}
+.Header__S3__button2:hover{
+    transition: 0.5s;
+    background-color: #333333;
+}
+.Header__S3__button3:hover{
+    background-color: #F2F2F2;
+}
+.textbox{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textbox__one{
+    font-size: 48px;
+    font-weight: bolder;
+}
+.menubar{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+.menubar__one{
+    padding-left: 30px;
+    cursor: pointer;
+}
+.menubar__one p {
+    position: relative;
+    display: inline-block;
+}
+.menubar__one p::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust the distance between the text and the underline */
+    left: 0;
+    width: 0;
+    height: 2%; /* Thickness of the underline */
+    background-color: black; /* Color of the underline */
+    transition: width 0.3s ease; /* Smooth transition for the underline */
+}
+.menubar__one p:hover::after {
+    transition: 0.5s;
+    width: 100%; /* Full width underline on hover */
+}
+.Searchbar{
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+.Searchbar__S1{
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 30px;
+    width: 85%;
+    max-width: 600px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.Searchbar__S1 input{
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    background: transparent;
+}
+.Searchbar__S1 input:focus{
+    outline: none;
+}
+.Searchbar__S1 button{
+    background-color: #15d783;
+    color: black;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    border: solid #15d783;
+    cursor: pointer;
+}
+.Searchbar__S1 button:hover{
+    transition: 0.5s;
+    background-color: #84E9BD;
+    border: solid #84E9BD;
+}
+.Sale-image{
+    margin-top: 40px;
+    margin: 20px;
+    position: relative;
+}
+.Sale-image img {
+    width: 100%;
+}
+
+.Sale-image__content{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    color: white;
+}
+.Sale-image__content__S1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Sale-image__content__S1 h3{
+    border: solid black 1px;
+    width: fit-content;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 4px;
+    border-radius: 10px;
+}
+.Sale-image__content__S2{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 60%;
+}
+.Sale-image__content__S2 h1{
+    font-size: 38px;
+    font-weight: bold;
+}
+.Sale-image__content__S2 h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.Sale-image__content__S2 button{
+    width: fit-content;
+    border: solid white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+.Sale-image__content__S2 button:hover{
+    transition: 0.5s;
+    background-color: #6E5D83;
+    border: solid #6E5D83;
+}
+.Discover{
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+    border: solid none;
+    background-color: #F2F1EC;
+    height: 170px;
+    border-radius: 10px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+}
+.Discover__img img{
+    height: 160px;
+    width: 160px;
+    border-radius: 5px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+        transform: rotate(-3deg);
+    }
+}
+.Discover__content{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    width: 50%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.Discover__contentp1{
+    background-color: #E0E0E0;
+    border: solid #F2F1EC 1px;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 20px;
+}
+.Discover__content p{
+    font-size: 16px;
+    text-align: justify;
+}
+.Discover button{
+    position: absolute;
+    left: 83%;
+    top: 50%;
+    font-size: 12px;
+    background-color: transparent;
+    border-radius: 25px;
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.Discover button:hover{
+    transition: 0.5s;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: solid #000000;
+}
+/* Main container styling */
+.Restautants {
+    margin: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Restautants h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.Restautants p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Flex container for images */
+.Restaurants__imgs {
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap; /* Ensures the items wrap into multiple rows */
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Individual image and text container */
+.Restaurants__imgs__one {
+    flex-basis: 22%; /* Default width for 4 images in a row */
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    aspect-ratio: 1/1; /* Ensures that each image block maintains a 1:1 aspect ratio */
+}
+
+/* Add hover zoom effect */
+.Restaurants__imgs__one:hover {
+    transform: scale(1.05);
+}
+
+/* Image styling */
+.Restaurants__imgs__one img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+/* Text styling */
+.Restaurants__imgs__one h2 {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    width: 100%; /* Ensures the text covers the entire width of the image */
+}
+
+/* Box shadow effect on the text */
+.Restaurants__imgs__one h2 {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px -23px 25px 0px inset, 
+                rgba(0, 0, 0, 0.4) 0px -36px 30px 0px inset, 
+                rgba(0, 0, 0, 0.3) 0px -79px 40px 0px inset;
+}
+.travel-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px;
+    margin-top: 60px;
+}
+.travel-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.travel-section p {
+    font-size: 1rem;
+    color: #6c6c6c;
+}
+/* Card grid layout */
+.travel-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+/* Individual card styling */
+.card {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+/* Image styling */
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+/* Text content styling */
+.card-content {
+    padding: 10px;
+}
+.card-content p {
+    color: #999;
+    font-size: 0.9rem;
+}
+.card-content h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #ff5a5f;
+}
+.items i {
+    color: #ff5a5f;
+}
+.items span {
+    font-size: 0.9rem;
+}
+.WTT{
+    margin: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.WTT h2{
+    font-size: 2rem; /* Adjusted the font size for the header */
+    font-weight: bold;
+}
+.WTT p{
+    color: #666;
+    font-size: 1rem;
+}
+.WTT__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.WTT__container__card{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.WTT__container__card h4{
+    border: solid black 2px;
+    padding: 5px;
+    font-size: smaller;
+    width: fit-content;
+    border-radius: 5px;
+}
+.WTT__container__card img{
+    height: 50%;
+    /*to make everything in even height*/
+    width: 100%;
+    transition: opacity 0.3s ease-in-out; 
+}
+.WTT__container__card:hover img {
+    opacity: 0.7; /* Reduce opacity only for the hovered image */
+}
+.WTT__container__card__img {
+    background-color: white;
+    position: absolute; /* Absolute positioning for the heart icon */
+    top: 10px; /* Position it at the top */
+    right: 10px; /* Position it to the right */
+    width: 30px; /* Adjust the size of the heart icon */
+    height: 30px;
+    z-index: 2; /* Ensure it appears above the image */
+}
+
+.WTT__container__card__img img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.MTE{
+    margin: 20px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #F2F1EC;
+    height: fit-content;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+.MTE h2{
+    padding-left: 3px;
+    font-size: 1.5rem; /* Adjusted the font size for the header */
+    font-weight: bold;
+}
+.MTE__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.MTE__container__card{
+    flex-grow: 1;
+    flex-basis: 20%;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+}
+.MTE__container__card p{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+.MTE__container__card p:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.MTE__container__card img{
+    height: 80%;
+    /*to make everything in even height*/
+    width: 100%;
+    transition: opacity 0.3s ease-in-out; 
+}
+.MTE__container__card img:hover{
+    opacity: 0.7; /* Reduce opacity only for the hovered image */
+}
+.MTE__container__card__img {
+    background-color: white;
+    position: absolute; /* Absolute positioning for the heart icon */
+    top: 10px; /* Position it at the top */
+    right: 10px; /* Position it to the right */
+    width: 30px; /* Adjust the size of the heart icon */
+    height: 30px;
+    z-index: 2; /* Ensure it appears above the image */
+}
+
+.MTE__container__card__img img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Awd-image{
+    margin-top: 80px;
+    margin: 20px;
+    position: relative;
+}
+.Awd-image img{
+    margin-top: 60px;
+    width: 100%;
+}
+.Awd-image__content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+    position: absolute;
+    top: 15%;
+    right: 5%;
+}
+.Awd-image__content img{
+    height: 25%;
+    width: 25%;
+}
+.Awd-image__content h1{
+    font-size: 40px;
+}
+.Awd-image__content h2{
+    font-weight: lighter;
+}
+.Awd-image__content button{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+}
+.Awd-image__content button:hover{
+    transition: 0.5s;
+    background-color: white;
+    color: #000000;
+}
+.Awd-container {
+    max-width: 1200px; 
+    margin: 0 auto;  
+    padding: 0 20px;   
+}
+.Footer {
+    padding: 40px 40px 20px; /* Adjusted padding */
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Footer__F1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Flex-wrap to handle smaller screens */
+    gap: 40px; /* Space between sections */
+}
+.Footer__F1__one {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 40px; /* Space between columns */
+    flex-grow: 1;
+}
+.Footer__F1__one__1,
+.Footer__F1__one__2a,
+.Footer__F1__one__2b {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Footer__F1__one__2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Footer__F1__one__1p {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333; /* Darker color for headings */
+}
+.Footer__F1__one p {
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
+.Footer__F1__one p:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: 0.3s ease;
+}
+
+.Footer__F1__two {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Footer__F1__two p {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+}
+
+.Footer__F2 {
+    padding: 20px 0; /* Separation between sections */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+.Footer__F2__one {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    width: 60%;
+}
+
+.Footer__F2__one img {
+    height: 70px;
+    width: 70px;
+}
+
+.Footer__F2__one1 p {
+    font-size: 14px;
+    color: #666;
+}
+
+.Footer__F2__one2 {
+    display: flex;
+    gap: 15px; /* Increased gap for better readability */
+    flex-wrap: wrap;
+}
+
+.Footer__F2__one2 h4 {
+    padding-right: 15px;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.Footer__F2__three,
+.Footer__F2__four {
+    display: flex;
+    align-items: center;
+}
+
+.Footer__F2__three select,
+.Footer__F2__four select {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.Footer__F2__three select:hover,
+.Footer__F2__four select:hover {
+    background-color: #E8E3DB;
+}
+
+.Footer__F3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.Footer__F3__one {
+    width: 70%;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.Footer__F3__two {
+    display: flex;
+    gap: 20px; /* Space between social icons */
+}
+
+/* Specific Positioning of "Tripadvisor Sites" and "Viator" */
+.Footer__F1__two {
+    flex-grow: 1; /* Takes the full remaining space */
+}
+
+.Footer__F1__two p {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:800px){
+    body{
+        font-size: 12px;
+    }
+    .Header{
+        position: sticky;
+        top: 0;
+        z-index: 3;
+    }
+    .Header__S1 img{
+        width: 6%;
+        height: 6%;
+    }
+    .Header__S1 h1{
+        font-size: 26px;
+    }
+    .Header__S2,.Header__S3__button1{
+        display: none;
+    }
+    .Header__S3__button3,.Header__S0{
+        display: block;
+    }
+    .Header__S3__button2, .Header__S3__button3 {
+        padding: 10px;  /* Reduce padding */
+        font-size: 10px;  /* Reduce font size */
+        width: 63px;
+        font-weight: bold;
+    }
+    .Header__S3 {
+        gap: 5px;  /* Reduce the gap between buttons */
+    }
+    .textbox__one{
+        font-size: 42px
+    }
+    /* Adjust search bar size for tablet */
+    .Searchbar__S1 {
+        padding: 7px;
+        border-radius: 18px;  /* Make border radius smaller */
+        width: 70%;  /* Reduce the width of the search bar */
+    }
+    /* Adjust input and button sizes */
+    .Searchbar__S1 input {
+        font-size: 12px;  /* Reduce font size */
+    }
+
+    .Searchbar__S1 button {
+        padding: 4px;  /* Make button smaller */
+        font-size: 12px;  /* Reduce font size */
+        border-radius: 12px;  /* Adjust border-radius to match smaller button */
+    }
+    .Sale-image__content{
+        top: 12%;
+        left: 10%;
+    }
+    .Sale-image__content__S1 h3{
+        font-size: 12px;
+        padding: 4px;
+        border-radius: 8px;
+    }
+    .Sale-image__content__S2 h1{
+        font-size: 36px;
+    }
+    .Sale-image__content__S2 h2{
+        font-size: 16px;
+    }
+    .Sale-image__content__S2 button{
+        font-size: 12px;
+        border-radius: 25px;
+        padding: 8px;
+    }
+    .Discover{
+        padding: 18px;
+        height: 160px;
+        border-radius: 10px;
+        gap: 50px;
+    }
+    .Discover__img img{
+        height: 140px;
+        width: 140px;
+        border-radius: 5px;
+    }
+    .Discover__contentp1{
+        padding: 6px;
+        font-size: 12px;
+        border-radius: 15px;
+    }
+    .Discover__content h2{
+        font-size: 24px;
+    }
+    .Discover__content p{
+        font-size: 14px;
+    }
+    .Discover button{
+        left: 80%;
+        top: 60%;
+        font-size: 12px;
+        border-radius: 2wpx;
+        padding: 12px;
+    }
+    .Restautants h2 {
+        font-size: 1.6rem;
+    }
+    .Restautants p{
+        font-size: 0.8rem;
+    }
+    .Restaurants__imgs__one {
+        flex-basis: 22%; /* 4 images per row */
+    }
+    .Restaurants__imgs__one h2 {
+        font-size: 18px;
+    }
+    .travel-section h2 {
+        font-size: 1.6rem;
+    }
+    .travel-section p {
+        font-size: 0.8rem;
+    }    
+    .WTT h2{
+        font-size: 1.6rem; /* Adjusted the font size for the header */
+        font-weight: bold;
+    }
+    .WTT p{
+        color: #666;
+        font-size: 0.8rem;
+    }
+    .MTE h2{
+        font-size: 1.3rem;
+    }
+    .MTE__container__card p{
+        font-size: 12px;
+    }
+    .Awd-image__content img{
+        height: 20%;
+        width: 20%;
+    }
+    .Awd-image__content h1{
+        font-size: 32px;
+    }
+    .Awd-image__content h2{
+        font-size: 16px;
+        font-weight: lighter;
+    }
+    .Awd-image__content button{
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 18px;
+    }
+    .Footer__F1{
+        gap: 12px;
+    }
+    .Footer__F1__one{
+        gap: 15px;
+    }
+    .Footer__F1__one__1,
+    .Footer__F1__one__2a,
+    .Footer__F1__one__2b{
+        gap: 5px;
+    }
+    .Footer__F1__one p{
+        font-size: 12px;
+    }
+    .Footer__F1__two p {
+        font-size: 12px;
+    }
+    .Footer__F2__one {
+        gap: 10px;
+        width: 60%;
+    }
+    
+    .Footer__F2__one img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .Footer__F2__one1 p {
+        font-size: 8px;
+    }
+    
+    .Footer__F2__one2 {
+        gap: 10px;
+    }
+    
+    .Footer__F2__one2 h4 {
+        padding-right: 5px;
+        font-size: 12px;
+    }
+    .Footer__F2__three{
+        padding-right: 5px;
+    }
+    .Footer__F2__three select,
+    .Footer__F2__four select {
+        padding: 8px 12px;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    .Footer__F3 {
+        padding-bottom: 30px;
+    }
+    
+    .Footer__F3__one {
+        width: 70%;
+        font-size: 12px;
+        text-align: justify;
+    }
+    
+    .Footer__F3__two {
+        gap: 15px; /* Space between social icons */
+    }
+}
+@media screen and (max-width: 500px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; 
+    }
+
+    *, *::before, *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Header {
+        position: sticky;
+        top: 0;
+        z-index: 3;
+        width: 100%; /* Ensure it takes the full width */
+        background-color: #fff; /* Optional: background to ensure it's visible */
+        padding: 10px; /* Optional: adjust padding for better spacing */
+        /* Avoid overflow from sticky elements */
+    }
+
+    .Header__S1 img {
+        width: 8%;
+        height: 8%;
+    }
+
+    .Header__S1 h1 {
+        font-size: 22px;
+    }
+
+    .textbox__one {
+        font-size: 36px;
+    }
+
+    .menubar__one {
+        padding-left: 12px;
+    }
+
+    .menubar__one p {
+        font-size: 10.5px;
+    }
+
+    .Searchbar__S1 {
+        padding: 5px;
+        border-radius: 13px;
+        width: 85%; /* Slightly reduce to avoid overflow */
+        margin: 0 auto; /* Center it to remove excess spaces */
+    }
+
+    /* Adjust input and button sizes for mobile */
+    .Searchbar__S1 input {
+        font-size: 10px;  /* Reduce font size further */
+    }
+
+    .Searchbar__S1 button {
+        padding: 3px;  /* Make button even smaller */
+        font-size: 10px;  /* Reduce button text size */
+        border-radius: 10px;  /* Smaller border-radius for mobile */
+    }
+
+    .Sale-image__content__S1 h3 {
+        font-size: 10px;
+        padding: 3px;
+        border-radius: 6px;
+    }
+
+    .Sale-image__content__S2 h1 {
+        font-size: 24px;
+    }
+
+    .Sale-image__content__S2 h2 {
+        font-size: 11px;
+    }
+
+    .Sale-image__content__S2 button {
+        font-size: 9px;
+        border-radius: 16px;
+        padding: 4px;
+    }
+
+    .Discover {
+        padding: 16px;
+        height: 120px;
+        border-radius: 10px;
+        gap: 30px;
+    }
+
+    .Discover__img img {
+        height: 110px;
+        width: 110px;
+        border-radius: 5px;
+    }
+
+    .Discover__content {
+        width: 45%;
+    }
+
+    .Discover__contentp1 {
+        display: none;
+    }
+
+    .Discover__content h2 {
+        font-size: 18px;
+    }
+
+    .Discover__content p {
+        font-size: 11px;
+    }
+
+    .Discover button {
+        left: 81%;
+        top: 60%;
+        font-size: 10px;
+        border-radius: 18px;
+        padding: 6px;
+    }
+
+    .Restautants h2 {
+        font-size: 1.4rem;
+    }
+
+    .Restautants p {
+        font-size: 0.8rem;
+    }
+
+    .Restaurants__imgs__one {
+        flex-basis: 45%; /* 2 images per row */
+    }
+
+    .Restaurants__imgs__one h2 {
+        font-size: 16px;
+    }
+
+    .travel-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .travel-section p {
+        font-size: 0.8rem;
+    }
+
+    .card-content h3 {
+        text-align: center;
+        font-size: 0.9rem;
+        margin: 10px 0;
+        font-weight: bold;
+    }
+
+    .items span {
+        font-size: 0.7rem;
+    }
+
+    .WTT h2 {
+        font-size: 1.4rem; /* Adjusted the font size for the header */
+    }
+    .WTT__container__card {
+        flex-basis: 45%;
+    }
+    .MTE {
+        margin: 10px;
+        margin-top: 50px;
+        gap: 10px;
+        background-color: #F2F1EC;
+        padding: 10px;
+        margin-bottom: 50px;
+    }
+
+    .MTE h2 {
+        padding-left: 3px;
+        font-size: 1.2rem; /* Slightly smaller font for mobile */
+        font-weight: bold;
+    }
+
+    .MTE__container {
+        display: flex;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        justify-content: space-between; /* Evenly distribute the cards */
+        gap: 5px; /* Reduced gap to fit three images in a row */
+        margin-top: 10px;
+    }
+
+    .MTE__container__card {
+        flex-basis: 30%; /* Each card will take approximately 1/3 of the container */
+        margin: 5px;
+        position: relative;
+        cursor: pointer;
+    }
+    .MTE__container__card p {
+        padding-top: 5px;
+        text-align: center;
+        font-size: 12px; /* Slightly smaller text for mobile */
+    }
+
+    .MTE__container__card img {
+        height: 100px; /* Adjust image height to fit within the smaller cards */
+        width: 100%;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .MTE__container__card__img {
+        width: 20px; /* Slightly smaller heart icon */
+        height: 20px;
+        top: 5px; /* Adjust the position for smaller screens */
+        right: 5px;
+    }
+
+    .MTE__container__card__img img {
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .Awd-image__content{
+        top: 10%;
+        gap: 10px;
+    }
+    .Awd-image__content h1{
+        font-size: 20px;
+    }
+    .Awd-image__content h2{
+        font-size: 12px;
+    }
+    .Awd-image__content button{
+        font-size: 10px;
+        padding: 6px;
+        border-radius: 12px;
+    }
+    .Footer__F1{
+        gap: 12px;
+    }
+    .Footer__F1__one{
+        gap: 10px;
+    }
+    .Footer__F1__one__1,
+    .Footer__F1__one__2a,
+    .Footer__F1__one__2b{
+        gap: 5px;
+    }
+    .Footer__F1__one p{
+        font-size: 8px;
+    }
+    .Footer__F1__two p {
+        font-size: 8px;
+    }
+    .Footer__F2__one {
+        gap: 10px;
+        width: 60%;
+    }
+    
+    .Footer__F2__one img {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .Footer__F2__one1 p {
+        font-size: 6px;
+    }
+    
+    .Footer__F2__one2 {
+        gap: 5px;
+    }
+    
+    .Footer__F2__one2 h4 {
+        padding-right: 5px;
+        font-size: 9px;
+    }
+    .Footer__F2__three{
+        padding-right: 2px;
+    }
+    .Footer__F2__three select,
+    .Footer__F2__four select {
+        padding: 6px 8px;
+        border-radius: 3px;
+        font-size: 8px;
+    }
+    .Footer__F3 {
+        padding-bottom: 30px;
+    }
+    
+    .Footer__F3__one {
+        width: 70%;
+        font-size: 8px;
+        text-align: justify;
+    }
+    
+    .Footer__F3__two {
+        gap: 10px; /* Space between social icons */
+    }
+}
