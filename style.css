@@ -959,7 +959,7 @@ body {
         gap: 15px; /* Space between social icons */
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     body, html {
         margin: 0;
         padding: 0;
@@ -993,7 +993,12 @@ body {
     .Header__S1 h1 {
         font-size: 22px;
     }
-
+    .Header__S3__button2, .Header__S3__button3 {
+        padding: 8px;  /* Reduce padding */
+        font-size: 8px;  /* Reduce font size */
+        width: fit-content;
+        font-weight: bold;
+    }
     .textbox__one {
         font-size: 36px;
     }
