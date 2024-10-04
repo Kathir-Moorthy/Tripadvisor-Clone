@@ -1037,12 +1037,15 @@ body {
         border-radius: 5px;
     }
     Sale-image__content__S1 p{
-        font-size: 6px;
+        font-size: 5px;
     }
     .Sale-image__content__S2 h1 {
         font-size: 16px;
+        font-weight: 600;
     }
-
+    .Sale-image__content__S2{
+        gap: 4px;
+    }
     .Sale-image__content__S2 h2 {
         font-size: 9px;
     }
@@ -1057,17 +1060,17 @@ body {
         padding: 16px;
         height: 120px;
         border-radius: 10px;
-        gap: 30px;
+        gap: 20px;
     }
 
     .Discover__img img {
-        height: 110px;
-        width: 110px;
+        height: 100px;
+        width: 100px;
         border-radius: 5px;
     }
 
     .Discover__content {
-        width: 45%;
+        width: 40%;
     }
 
     .Discover__contentp1 {
@@ -1075,19 +1078,20 @@ body {
     }
 
     .Discover__content h2 {
-        font-size: 18px;
+        font-size: 10px;
     }
 
     .Discover__content p {
-        font-size: 11px;
+        font-size: 7px;
     }
 
     .Discover button {
-        left: 81%;
-        top: 60%;
-        font-size: 10px;
-        border-radius: 18px;
-        padding: 6px;
+        left: 83%;
+        top: 80%;
+        font-size: 6px;
+        border: solid 0.4px;
+        border-radius: 10px;
+        padding: 2px;
     }
 
     .Restautants h2 {
@@ -1111,18 +1115,18 @@ body {
     }
 
     .travel-section p {
-        font-size: 0.8rem;
+        font-size: 0.4rem;
     }
 
     .card-content h3 {
         text-align: center;
-        font-size: 0.9rem;
+        font-size: 0.6rem;
         margin: 10px 0;
         font-weight: bold;
     }
 
     .items span {
-        font-size: 0.7rem;
+        font-size: 0.4rem;
     }
 
     .WTT h2 {
@@ -1163,9 +1167,12 @@ body {
     .MTE__container__card p {
         padding-top: 5px;
         text-align: center;
-        font-size: 12px; /* Slightly smaller text for mobile */
+        font-size: 8px; /* Slightly smaller text for mobile */
     }
-
+    .MTE__container__card p:hover{
+        text-decoration: underline;
+        text-underline-offset: 2px;
+    }
     .MTE__container__card img {
         height: 100px; /* Adjust image height to fit within the smaller cards */
         width: 100%;
@@ -1186,49 +1193,48 @@ body {
         object-fit: cover;
     }
     .Awd-image__content{
-        top: 10%;
-        gap: 10px;
+        top: 7%;
+        gap: 6px;
+    }
+    .Awd-image__content img{
+        height: 18%;
+        width: 18%;
     }
     .Awd-image__content h1{
-        font-size: 20px;
+        font-size: 14px;
     }
     .Awd-image__content h2{
-        font-size: 12px;
+        font-size: 8px;
     }
     .Awd-image__content button{
-        font-size: 10px;
-        padding: 6px;
-        border-radius: 12px;
+        font-size: 7px;
+        padding: 4px;
+        border-radius: 10px;
     }
     .Footer__F1{
-        gap: 12px;
+        gap: 8px;
     }
     .Footer__F1__one{
-        gap: 10px;
+        gap: 22px;
     }
     .Footer__F1__one__1,
     .Footer__F1__one__2a,
     .Footer__F1__one__2b{
-        gap: 5px;
+        gap: 3px;
     }
     .Footer__F1__one p{
-        font-size: 8px;
+        font-size: 7px;
     }
-    .Footer__F1__two p {
-        font-size: 8px;
+    .Footer__F1__two{
+       display: none;
     }
-    .Footer__F2__one {
-        gap: 10px;
-        width: 60%;
-    }
-    
     .Footer__F2__one img {
         height: 25px;
-        width: 25px;
+        width: 50px;
     }
     
     .Footer__F2__one1 p {
-        font-size: 6px;
+        font-size: 4px;
     }
     
     .Footer__F2__one2 {
@@ -1236,25 +1242,26 @@ body {
     }
     
     .Footer__F2__one2 h4 {
-        padding-right: 5px;
-        font-size: 9px;
+        padding-right: 2px;
+        font-size: 5px;
     }
     .Footer__F2__three{
         padding-right: 2px;
     }
     .Footer__F2__three select,
     .Footer__F2__four select {
-        padding: 6px 8px;
+        padding: 3px;
         border-radius: 3px;
-        font-size: 8px;
+        width: fit-content;
+        font-size: 5px;
     }
     .Footer__F3 {
         padding-bottom: 30px;
     }
     
     .Footer__F3__one {
-        width: 70%;
-        font-size: 8px;
+        width: 60%;
+        font-size: 6px;
         text-align: justify;
     }
     
